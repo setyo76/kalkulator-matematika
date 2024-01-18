@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tugas mini course software engineering revoU, Kalkulator Matematika.">
+    <title>Kalkulator Matematika | revoU Mini Project</title>
+    <link rel="icon" type="image/x-icon" href="./img/Logo kalmat.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <div class="logo"><a href="#index.html"><img src="./img/Logo kalmat.png" alt=""></a></div>
+        <h1>Kalkulator Matematika</h1>
+        <p>Hai Sobat... Selamat datang di Katik :).Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <a class="active" href="#home">Home</a>
+        <a href="#luas">Luas Persegi</a>
+        <a href="#keliling">Keliling Persegi</a>
+      </div>
+      
+      <div class="content">
+        <div class="container-luas">
+            <h1 id="luas"  class="title-luas">Luas Persegi</h1>
+            <span class="left-span">A</span><span class="right-span">B</span>
+            <div id="hasil">
+    
+            </div>
+            <span class="left-span">D</span><span class="right-span">C</span>
+            <p class="bujur">Bujur Sangkar</p>
+            <br>
+            <div class="keterangan">
+                <div class="left-ket">
+                    <p>
+                        Luas Persegi yaitu:
+                    </p>
+                    <p>L = S x S</p>
+                </div>
+    
+                <div class="right-ket">
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                </div>
+            </div>
+
+            <h5 class="title-action-luas">Hitung Luas Persegi</h5>
+            <fieldset>
+                <input class="sisi"   type="number" id="sisi" placeholder="Nilai sisi">
+            </fieldset>
+            <fieldset>
+                <button class="btn-hasil" type="submit" onclick="hitungLuas()">Hitung</button>
+                <button class="btn-reset" type="submit" onclick="resetPersegiLuas()">Reset</button>
+            </fieldset>
+        </div>
+       
+        <br>
+        <br>
+        <br>
+
+        <div class="container-keliling">
+            <h1 id="keliling" class="title-keliling">Keliling Persegi</h1>
+            <span class="left-span">A</span><span class="right-span">B</span>
+            <div id="result">
+                
+            </div>
+            <span class="left-span">D</span><span class="right-span">C</span>
+            <p class="bujur">Bujur Sangkar</p>
+            <br>
+            <div class="keterangan">
+                <div class="left-ket">
+                    <p>
+                        Keliling Persegi yaitu:
+                    </p>
+                    <p>K = 4 x S</p>
+                </div>
+    
+                <div class="right-ket">
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </div>
+            </div>
+
+            <h5 class="title-action-keliling">Hitung Keliling Persegi</h5>
+            <fieldset>
+                <input class="sisi"   type="number" id="sisi" placeholder="Nilai sisi">
+            </fieldset>
+            <fieldset>
+                <button class="btn-hasil" type="submit" onclick="hitungKeliling()">Hitung</button>
+                <button class="btn-reset" type="submit" onclick="resetPersegiKeliling()">Reset</button>
+            </fieldset>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+              <p>&copy; 2023 by. <a href="https://github.com/setyo76" target="_blank" class="footer-link">Setyo Nug</a>.</p>
+            </div>
+          </footer>
+      </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
